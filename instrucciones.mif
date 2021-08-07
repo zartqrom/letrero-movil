@@ -1,0 +1,23 @@
+DEPTH = 16;                   -- The size of memory in words
+WIDTH = 16;                    -- The size of data in bits
+ADDRESS_RADIX = HEX;          -- The radix for address values
+DATA_RADIX = BIN;             -- The radix for data values
+CONTENT                       -- start of (address : data pairs)
+BEGIN
+00 :0000001000110000;  --a+b              -- memory address : data
+01 :0000011000110001;  --a-b
+02 :0000101000110010;  --a and b
+03 :0000111000110011;  --a or b              -- memory address : data
+04 :0001001000110100;  --not a
+05 :0001011000110101;  --c=A
+06 :0001101000110110;  --a+1
+07 :0001111000111111;  --a-1              -- memory address : data
+08 :0010001000110000;  --a+b              -- memory address : data
+09 :0010011000110001;  --a-b
+0A :0010101000110010;  --a and b
+0B :0010111000110011;  --a or b              -- memory address : data
+0C :0010111000110100;  --not a
+0D :0000001000110101;  --c=A
+0E :0001001000110110;  --a+1
+0F :0000111000111111;  --a-1              -- memory address : data
+END;
